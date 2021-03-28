@@ -83,3 +83,30 @@ location / {
 
 安装完成后浏览器输入`http://华为云公网IP`即可进入博客
 
+## 解决FTP问题
+
+执行`nano /usr/local/nginx/html/wp-config.php`
+
+在以下内容：
+
+```
+if ( !defined('ABSPATH') )
+
+define('ABSPATH', dirname(__FILE__) . '/');
+```
+
+后添加：
+
+```
+define('WP_TEMP_DIR', ABSPATH.'wp-content/tmp');
+
+define("FS_METHOD", "direct");
+
+define("FS_CHMOD_DIR", 0777);
+
+define("FS_CHMOD_FILE", 0777);
+```
+
+执行`mkdir /usr/local/nginx/html/wp-content/tmp`
+
+执行`chmod -R 777 /usr/local/nginx/html/wp-content/tmp`

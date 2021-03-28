@@ -1,6 +1,6 @@
 # 从零开始安装Manjaro
 
-修改时间：2021.03.24 23:34
+修改时间：2021.03.27 11:29
 
 使用环境：VirtualBox+Manjaro 2021.1 全量版
 
@@ -75,8 +75,8 @@ Server = https://mirrors.ustc.edu.cn/archlinuxcn/$arch
 运行`sudo nano /usr/bin/wps`，在第一行下补充如下代码：
 
 ```text
-export XMODIFIERS="@im=fcitx"
-export QT_IM_MODULE="fcitx"
+export XMODIFIERS="@im=fcitx5"
+export QT_IM_MODULE="fcitx5"
 gOpt=
 # gOptExt=-multiply
 gTemplateExt=("wpt" "dot" "dotx")
@@ -87,22 +87,33 @@ gTemplateExt=("wpt" "dot" "dotx")
 依次运行如下代码：
 
 ```text
-yay -Sy fcitx-im
-yay -Sy fcitx-configtool
-yay -Sy fcitx-googlepinyin
+sudo pacman -S fcitx5-im
+sudo pacman -S fcitx5-chinese-addons
+sudo pacman -S fcitx5-material-color
 ```
 
 运行`nano ~/.xprofile `添加如下代码：
 
 ```text
-export GTK_IM_MODULE=fcitx
-export QT_IM_MODULE=fcitx
-export XMODIFIERS="@im=fcitx"
+export GTK_IM_MODULE=fcitx5
+export QT_IM_MODULE=fcitx5
+export XMODIFIERS="@im=fcitx5"
+fcitx5 &
 ```
+
+运行`nano ~/.xinitrc`在`exec $(get_session)`前添加：
+
+```
+export GTK_IM_MODULE=fcitx5
+export XMODIFIERS=@im=fcitx5
+export QT_IM_MODULE=fcitx5
+```
+
+在设置中将**工具**中的fcitx5加入开机启动项
 
 运行`sudo reboot now`重启计算机
 
-打开fcitx配置工具，删除除google输入法与英文键盘的所有输入法
+打开fcitx配置工具，进行相关配置
 
 ## 其他软件
 
@@ -118,6 +129,21 @@ yay -Sy netease-cloud-music
 yay -Sy cocomusic
 ```
 
+### V2ray
+
+```text
+yay -Sy qv2ray
+yay -Sy v2ray
+```
+
+### Edge
+
+```
+yay -S microsoft-edge-dev-bin
+```
+
+在地址栏输入`edge://flags`打开实验性选项页面，接着搜索`MSA sign in`，将右侧的选项改为**Enabled**
+
 待后续补充
 
 ## 常见问题
@@ -129,3 +155,7 @@ yay -Sy cocomusic
 **安装软件显示：已损坏 (无效或已损坏的软件包 (PGP 签名))**
 
 解决：配置archlinuxcn时SigLevel=Optional TrustAll
+
+**开机后会打开关机之前的所有窗口**
+
+解决：`kcmshell5 kcm_smserver`后勾选**以空白会话启动**

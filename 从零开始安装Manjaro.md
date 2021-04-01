@@ -1,8 +1,8 @@
 # 从零开始安装Manjaro
 
-修改时间：2021.03.27 11:29
+修改时间：2021.04.01 13:55
 
-使用环境：VirtualBox+Manjaro 2021.1 全量版
+使用环境：Manjaro 2021.1 Minimal
 
 ## 安装系统
 
@@ -144,8 +144,6 @@ yay -S microsoft-edge-dev-bin
 
 在地址栏输入`edge://flags`打开实验性选项页面，接着搜索`MSA sign in`，将右侧的选项改为**Enabled**
 
-待后续补充
-
 ## 常见问题
 
 **ERROR: Cannot find the strip binary required for object file stripping.**
@@ -159,3 +157,9 @@ yay -S microsoft-edge-dev-bin
 **开机后会打开关机之前的所有窗口**
 
 解决：`kcmshell5 kcm_smserver`后勾选**以空白会话启动**
+
+
+
+## 备注
+
+因输入法偶发不显示备选框问题无法解决，于2021年4月1日13:56:42放弃使用Manjaro，转而使用Deepin 20.2，此文完结。

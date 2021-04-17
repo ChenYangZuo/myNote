@@ -1,6 +1,6 @@
 # GitHub使用教程
 
-修改时间：2020.09.30 21:15
+修改时间：2021.04.17 22:02
 
 ## 迈出Git的第一步
 
@@ -18,7 +18,7 @@
 
 使用`git remote add origin xxxxx`添加远程仓库
 
-使用`git push -u origin master`将本地文件推送至远程仓库，第一次推送可加入`-u`参数使二者关联
+使用`git push -u origin main`将本地文件推送至远程仓库，第一次推送可加入`-u`参数使二者关联
 
 ## 从远程仓库拉取
 
@@ -28,7 +28,7 @@
 
 ### 更新仓库
 
-使用`git pull origin master:xxx`将远程仓库拉取并与本地分支合并
+使用`git pull origin master:xxx`或`git pull`将远程仓库拉取并与本地分支合并
 
 ## SSL连接
 
@@ -60,20 +60,49 @@ Git支持多种协议，但通过ssh支持的原生git协议速度最快、最�
 
 使用`git branch`来查看所有分支的情况
 
+## 多人开发
+
+### 情形1：
+
+A用户建立了仓库，提交test.txt文件至本地及远程；B用户拉取了远程的仓库。此时所有仓库保持一致
+
+此时A用户修改test.txt文件，并将其推送至远程仓库；B用户在没有拉取远程仓库变更时修改了本地test.txt，此时B用户使用`git push origin main`试图将代码推送至远程，git会提示冲突无法处理，并将冲突内容写入test.txt文件中
+
+这时可以打开文件，修改至最终所需要的效果，保存并再次commit，之后继续进行push即可成功推送
+
+### 情形2：
+
+A用户建立了仓库，提交test.txt文件至本地及远程；B用户拉取了远程的仓库。此时所有仓库保持一致
+
+此时A用户修改test.txt文件，并将其推送至远程仓库；B用户在没有拉取远程仓库变更时修改了本地test.txt，此时B用户想直接使用远程仓库覆盖本地仓库
+
+可以使用如下命令：
+
+```
+git fetch --all
+git reset --hard origin/master
+git pull
+```
+
+
+
 ## 代理设置
 
 ### 设置代理
 
 使用如下代码将代理设置为1080端口
 
-`git config --global http.proxy socks5://127.0.0.1:10808`
-`git config --global https.proxy socks5://127.0.0.1:10808`
+```
+git config --global http.proxy socks5://127.0.0.1:10808
+git config --global https.proxy socks5://127.0.0.1:10808
+```
 
 ### 取消代理
 
 使用如下代码取消代理设置
 
-`git config --global --unset http.proxy`
-
-`git config --global --unset https.proxy`
+```
+git config --global --unset http.proxy
+git config --global --unset https.proxy
+```
 

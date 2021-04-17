@@ -1,0 +1,33 @@
+# STM32开发笔记
+
+## 0.重定向串口
+
+在usart.c的**USER CODE BEGIN 0**处添加以下代码：
+
+```
+//将printf重定向到串口输出
+#ifdef __GNUC__
+#define PUTCHAR_PROTOTYPE int __io_putchar(int ch)
+#else
+#define PUTCHAR_PROTOTYPE int fputc(int ch, FILE *f)
+#endif /* __GNUC__ */
+
+PUTCHAR_PROTOTYPE
+{
+    HAL_UART_Transmit(&huart1, (uint8_t *)&ch, 1, 0xFFFF);
+    return ch;
+}
+```
+
+## 1.串口打印浮点数
+
+在STM32CubeMX的FreeRTOS配置项中，选择heap3选项
+
+## 2.莫名卡死循环
+
+删除main里某个函数的while(1)
+
+## 3.读取DS18B20错误
+
+GUI线程影响DS18B20时序，降低GUI线程优先级即可
+

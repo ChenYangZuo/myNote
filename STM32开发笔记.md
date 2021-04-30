@@ -1,5 +1,9 @@
 # STM32开发笔记
 
+修改时间：2021.04.17 23:04
+
+使用环境：Windows10 STM32CubeMX Clion(GCC-arm+OpenOCD)
+
 ## 0.重定向串口
 
 在usart.c的**USER CODE BEGIN 0**处添加以下代码：

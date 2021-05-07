@@ -1,0 +1,139 @@
+# C语言数组移动的那些事
+
+修改时间：2021.05.06 11:12
+
+使用环境：Windows10 Clion C11 GCC
+
+## 前情回顾
+
+做嵌入式设计时涉及到数据动态绘图的功能，需要将所需数据放置在一个固定长度的数组中，就有了数组整体移动、抛弃旧数据、插入新数据的需求，由此有了两种解决方案，并做了一些简单的性能测试。
+
+## 方案1
+
+使用**memcpy**函数复制数组地址数据到对应地址，代码如下：
+
+```c
+void floatArrayShift(float array[],float num){
+    memcpy(array,&array[1],(MAX_WIDTH-1)*sizeof(float));
+    array[MAX_WIDTH-1] = num;
+}
+
+int test1(){
+    float data[MAX_WIDTH] = {(float)0.5};
+    clock_t start,finish;
+    start = clock();
+    for(int i=0;i<MAX_WIDTH;i++){
+        floatArrayShift(data,(float)(i+0.1));
+    }
+    finish = clock();
+    printf("TEST1: %ld ms\n",finish-start);
+    return 0;
+}
+```
+
+需要注意的是，此方案相比于方案2，需要注意数组的类型，在面临多种类型的数组时，需要额外增加对类型所占内存的判断及计算。
+
+## 方案2
+
+使用for循环遍历数组向前幅值，代码如下：
+
+```C
+int test2(){
+    float data[MAX_WIDTH] = {(float)0.5};
+    clock_t start,finish;
+    start = clock();
+    for(int i=0;i<MAX_WIDTH;i++){
+        for (int j=0;j<MAX_WIDTH-1;j++){
+            data[j] = data[j+1];
+        }
+        data[MAX_WIDTH-1] = (float)(i+0.1);
+    }
+    finish = clock();
+    printf("TEST2: %ld ms\n",finish-start);
+    return 0;
+}
+```
+
+## 性能测试
+
+设置MAX_WIDTH为10000，对两种方案进行性能测试，10次测试结果如下，单位ms
+
+<table>
+   <tr>
+      <td>TEST1</td>
+      <td>10</td>
+      <td>9</td>
+      <td>20</td>
+      <td>9</td>
+      <td>11</td>
+      <td>10</td>
+      <td>9</td>
+      <td>19</td>
+      <td>9</td>
+      <td>9</td>
+   </tr>
+   <tr>
+      <td>TEST2</td>
+      <td>269</td>
+      <td>240</td>
+      <td>230</td>
+      <td>240</td>
+      <td>250</td>
+      <td>237</td>
+      <td>240</td>
+      <td>230</td>
+      <td>230</td>
+      <td>231</td>
+   </tr>
+</table>
+
+受个人编码能力影响，此次试验可能存在误差，但大致可以看出，使用内存操作比遍历的速度明显加快，可以明显提升软件运行效率。
+
+## 完整测试代码
+
+```c
+#include <stdio.h>
+#include <string.h>
+#include <time.h>
+
+#define MAX_WIDTH 10000
+
+void floatArrayShift(float array[],float num){
+    memcpy(array,&array[1],(MAX_WIDTH-1)*sizeof(float));
+    array[MAX_WIDTH-1] = num;
+}
+
+int test1(){
+    float data[MAX_WIDTH] = {(float)0.5};
+    clock_t start,finish;
+    start = clock();
+    for(int i=0;i<MAX_WIDTH;i++){
+        floatArrayShift(data,(float)(i+0.1));
+    }
+    finish = clock();
+    printf("TEST1: %ld ms\n",finish-start);
+    return 0;
+}
+
+int test2(){
+    float data[MAX_WIDTH] = {(float)0.5};
+    clock_t start,finish;
+    start = clock();
+    for(int i=0;i<MAX_WIDTH;i++){
+        for (int j=0;j<MAX_WIDTH-1;j++){
+            data[j] = data[j+1];
+        }
+        data[MAX_WIDTH-1] = (float)(i+0.1);
+    }
+    finish = clock();
+    printf("TEST2: %ld ms\n",finish-start);
+    return 0;
+}
+
+int main() {
+    test1();
+    test2();
+    return 0;
+}
+```
+

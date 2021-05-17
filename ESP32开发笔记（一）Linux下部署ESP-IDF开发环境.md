@@ -24,6 +24,8 @@
 
 ## 安装前设置
 
+在使用Ubuntu时未出现此问题，跳过此步骤
+
 ### 将默认Python版本切换为Python3
 
 `sudo update-alternatives --install /usr/bin/python python /usr/bin/python3 10 && alias pip=pip3`

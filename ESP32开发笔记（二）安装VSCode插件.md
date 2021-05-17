@@ -1,0 +1,46 @@
+# ESP32开发笔记（二）安装VSCode插件
+
+修改时间：2021.05.17 17:16
+
+使用环境：VirtualBox+Ubuntu20.04
+
+## 安装VSCode插件
+
+在插件中搜索**espressif**，选择**ESpressif IDF**安装
+
+在命令面板运行`ESP-IDF: Configure ESP-IDF extension`进入欢迎界面
+
+选择**USE EXISTING SETUP**，插件自动导入已安装的ESP-IDF
+
+## 第二个工程
+
+### 创建工程
+
+在命令面板运行`ESP-IDF: Show Examples Projects`显示例程
+
+选择get-started中的blink点灯例程，在右侧点击生成
+
+### 配置工程
+
+在命令面板运行`ESP-IDF: Set Espressif device target`选择开发芯片，这里选择默认**ESP32**
+
+在命令面板运行`ESP-IDF: SDK Configuration editor`配置SDK选项，这里保持默认
+
+### 编译工程
+
+在命令面板运行`ESP-IDF: Build your project`开始编译
+
+在命令面板运行`ESP-IDF: Size analysis of the binaries`查看编译的二进制文件信息
+
+### 烧录
+
+在命令面板运行`ESP-IDF: Select port to use`选择开发板使用的串口
+
+若出现无法访问的问题，可在命令行输入`chmod 777 /dev/ttyUSB0`提权
+
+在命令面板运行`ESP-IDF: Flash your project`开始刷写
+
+### 调试
+
+在命令面板运行`ESP-IDF: Monitor your device`查看调试信息
+

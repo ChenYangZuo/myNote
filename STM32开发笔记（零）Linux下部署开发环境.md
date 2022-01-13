@@ -1,0 +1,35 @@
+# STM32开发笔记（零）Linux下部署开发环境
+
+修改时间：2021.06016 22:27
+
+使用环境：Ubuntu 20.04 CLion
+
+## 安装依赖环境
+
+### 获取arm-gcc
+
+在[GNU Toolchain](https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm/downloads)下载二进制文件，保存在`/home/user/gcc-arm`文件夹下，修改`/etc/profile`文件，在末尾添加`export PATH＝$PATH:/home/user/bin`，执行`source /etc/profile`刷新环境变量。
+
+### 获取OpenOCD
+
+在Debian环境下，可直接执行`sudo apt install openocd`安装Openocd，但其版本为0.10.0，存在某些问题。
+
+官网下载OpenOCD源码包，解压至`/home/user/OpenOCD`，命令行输入`./configure`检查编译前环境，输入`make -j8`开始编译，成功编译后输入`sudo make install`安装。
+
+### 获取STM32CubeMX
+
+[STM32CubeMX](https://www.st.com/zh/development-tools/stm32cubemx.html)下载解压安装即可。
+
+## 配置Clion
+
+### 配置嵌入式开发工具链
+
+设置中将OpenOCD与STM32CubeMX的目录正确设置
+
+### 配置项目
+
+在OpenOCD中选择正确的.cfg文件，进行CMake扫描后，点击编译即可。编译结束后可使用JLink、STLink、DAP等调试器进行烧录。
+
+## 备忘
+
+使用OpenOCD0.10.0时工程目录里不要有空格

@@ -1,0 +1,132 @@
+{
+  "main": {
+    "id": "b428c5b77d3e0c5e",
+    "type": "split",
+    "children": [
+      {
+        "id": "6b81deb5af4fc9ff",
+        "type": "leaf",
+        "state": {
+          "type": "empty",
+          "state": {}
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "35499616d457dab7",
+    "type": "split",
+    "children": [
+      {
+        "id": "e8369fd95590a8a5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6c07d5da7940a8bf",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "bf4e7c8947c88923",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "af2efe234a73859c",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 247
+  },
+  "right": {
+    "id": "1d77612819e46e17",
+    "type": "split",
+    "children": [
+      {
+        "id": "1d9d67c22a2a8dde",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3a8bdfeaeee7343b",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "5f986e5f4de16140",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "631af91a0c95acb7",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "82b16da045392813",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "6c07d5da7940a8bf",
+  "lastOpenFiles": [
+    "笔记本风扇调速失效解决办法.md",
+    "在Ubuntu上部署QT6开发环境.md",
+    "Kanban/TEST.md",
+    "2022-07-27.md",
+    "Linux入坑指南.md",
+    "ESP32开发笔记（二）安装VSCode插件.md"
+  ]
+}

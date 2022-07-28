@@ -7,8 +7,12 @@
         "id": "6b81deb5af4fc9ff",
         "type": "leaf",
         "state": {
-          "type": "empty",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "Android Developer Learning Path.md",
+            "mode": "source",
+            "source": false
+          }
         }
       }
     ],
@@ -73,6 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Android Developer Learning Path.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,6 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Android Developer Learning Path.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -110,7 +116,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Android Developer Learning Path.md"
+              }
             }
           }
         ]
@@ -120,13 +128,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "6c07d5da7940a8bf",
+  "active": "6b81deb5af4fc9ff",
   "lastOpenFiles": [
-    "笔记本风扇调速失效解决办法.md",
-    "在Ubuntu上部署QT6开发环境.md",
-    "Kanban/TEST.md",
-    "2022-07-27.md",
+    "Git使用教程.md",
+    "Linux常用软件安装.md",
+    "C语言开发·[3]Qt开发.md",
     "Linux入坑指南.md",
-    "ESP32开发笔记（二）安装VSCode插件.md"
+    "Linux下配置clash.md",
+    "在树莓派上配置Samba服务.md",
+    "C语言开发·[2]Char的那些事.md",
+    "C语言开发·[1]数组移动的那些事.md",
+    "Kanban/第一个一年计划.md",
+    "笔记本风扇调速失效解决办法.md"
   ]
 }

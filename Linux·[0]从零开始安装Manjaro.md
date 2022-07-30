@@ -87,29 +87,23 @@ gTemplateExt=("wpt" "dot" "dotx")
 依次运行如下代码：
 
 ```text
-sudo pacman -S fcitx5-im
-sudo pacman -S fcitx5-chinese-addons
-sudo pacman -S fcitx5-material-color
+sudo pacman -S fcitx
+sudo pacman -S fcitx-im
+sudo pacman -S fcitx-configtool
+sudo pacman -S fcitx-googlepinyin
+sudo touch ~/.pam_environment
+sudo chmod 777 ~/.pam_environment
 ```
 
-运行`nano ~/.xprofile `添加如下代码：
+运行`nano  ~/.pam_environment `添加如下代码：
 
 ```text
-export GTK_IM_MODULE=fcitx5
-export QT_IM_MODULE=fcitx5
-export XMODIFIERS="@im=fcitx5"
-fcitx5 &
+GTK_IM_MODULE DEFAULT=fcitx
+QT_IM_MODULE  DEFAULT=fcitx
+XMODIFIERS    DEFAULT=@im=fcitx
+INPUT_METHOD  DEFAULT=fcitx
+SDL_IM_MODULE DEFAULT=fcitx
 ```
-
-运行`nano ~/.xinitrc`在`exec $(get_session)`前添加：
-
-```
-export GTK_IM_MODULE=fcitx5
-export XMODIFIERS=@im=fcitx5
-export QT_IM_MODULE=fcitx5
-```
-
-在设置中将**工具**中的fcitx5加入开机启动项
 
 运行`sudo reboot now`重启计算机
 

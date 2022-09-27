@@ -74,3 +74,7 @@ server {
 ## 修改WordPress配置
 
 进入WordPress后台，在设置-常规中修改连接的http为https
+
+**关联文档：**
+上一篇：[[WordPress·[1]在华为云上部署WordPress I]]
+下一篇：[[WordPress·[3]在树莓派上部署WordPress]]

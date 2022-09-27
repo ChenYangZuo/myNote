@@ -193,3 +193,7 @@ CUDA驱动
 CUDNN驱动
 
 安装pytorch
+
+**关联文档：**
+上一篇：[[Linux·[0]从零开始安装Manjaro]]
+下一篇：[[Linux·[2]Linux常用软件安装]]

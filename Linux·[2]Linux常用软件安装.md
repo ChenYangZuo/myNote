@@ -27,3 +27,7 @@
 | Clash/qV2ray      | github下载                     | [Releases · Dreamacro/clash (github.com)](https://github.com/Dreamacro/clash/releases)/[Releases · Qv2ray/Qv2ray (github.com)](https://github.com/Qv2ray/Qv2ray/releases) |
 | BaiduDisk         | 官网下载安装                   | [百度网盘 客户端下载 (baidu.com)](http://pan.baidu.com/download) |
 
+
+**关联文档：**
+上一篇：[[Linux·[1]Linux入坑指南]]
+下一篇：[[Linux·[3]Linux下配置clash]]

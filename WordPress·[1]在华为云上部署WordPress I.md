@@ -110,3 +110,8 @@ define("FS_CHMOD_FILE", 0777);
 执行`mkdir /usr/local/nginx/html/wp-content/tmp`
 
 执行`chmod -R 777 /usr/local/nginx/html/wp-content/tmp`
+
+
+**关联文档：**
+上一篇：无
+下一篇：[[WordPress·[2]在华为云上部署WordPress II]]

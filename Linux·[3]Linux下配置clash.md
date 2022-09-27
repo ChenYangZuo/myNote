@@ -80,3 +80,8 @@ WantedBy=multi-user.target
 使用`systemctl status clash`查看服务运行状况
 
 使用`systemctl list-units --type=service`查看当前正在运行的服务
+
+
+**关联文档：**
+上一篇：[[Linux·[2]Linux常用软件安装]]
+下一篇：[[Linux·[4]在Ubuntu上部署QT6开发环境]]

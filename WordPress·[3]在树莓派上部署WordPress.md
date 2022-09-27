@@ -109,3 +109,6 @@ include fastcgi_params;
 
 安装完成后浏览器输入`http://树莓派内网IP`即可进入博客
 
+**关联文档：**
+上一篇：[[WordPress·[2]在华为云上部署WordPress II]]
+下一篇：无

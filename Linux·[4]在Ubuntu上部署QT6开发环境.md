@@ -24,3 +24,6 @@
 
 打开终端输入`sudo apt install libgl-dev`安装OpenGL依赖
 
+**关联文档：**
+上一篇：[[Linux·[2]Linux常用软件安装]]
+下一篇：[[Linux·[5]利用frp进行SSH公网映射]]

@@ -3,5 +3,6 @@
   "translucency": false,
   "cssTheme": "Minimal",
   "interfaceFontFamily": "HarmonyOS Sans SC",
-  "textFontFamily": "HarmonyOS Sans SC"
+  "textFontFamily": "HarmonyOS Sans SC",
+  "accentColor": ""
 }

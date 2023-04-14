@@ -4,16 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "dfdaf49a2a20d624",
+        "id": "832e7df23eb13b27",
         "type": "tabs",
         "children": [
           {
-            "id": "6b81deb5af4fc9ff",
+            "id": "25b6de7e68526611",
             "type": "leaf",
             "state": {
-              "type": "kanban",
+              "type": "markdown",
               "state": {
-                "file": "Kanban/第一个一年计划.md"
+                "file": "Linux·[6]在Ubuntu上部署XDMA环境.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -67,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 247
+    "width": 235
   },
   "right": {
     "id": "1d77612819e46e17",
@@ -83,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Kanban/第一个一年计划.md",
+                "file": "Linux·[6]在Ubuntu上部署XDMA环境.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Kanban/第一个一年计划.md",
+                "file": "Linux·[6]在Ubuntu上部署XDMA环境.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -123,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Kanban/第一个一年计划.md"
+                "file": "Linux·[6]在Ubuntu上部署XDMA环境.md"
               }
             }
           }
@@ -134,17 +136,35 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "6b81deb5af4fc9ff",
+  "left-ribbon": {
+    "hiddenItems": {
+      "canvas:新建白板": false,
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false
+    }
+  },
+  "active": "25b6de7e68526611",
   "lastOpenFiles": [
-    "C语言开发·[3]Qt开发.md",
-    "WordPress·[1]在华为云上部署WordPress I.md",
-    "C语言开发·[3.1]QSS学习笔记.md",
-    "ESP32开发·[1.1]Linux下部署ESP-IDF开发环境.md",
-    "ESP32开发·[1.2]安装VSCode插件.md",
-    "Linux·[3]Linux下配置clash.md",
-    "Linux·[2]Linux常用软件安装.md",
-    "Linux·[1]Linux入坑指南.md",
+    "Linux·[4]在Ubuntu上部署QT6开发环境.md",
+    "Linux·[5]利用frp进行SSH公网映射.md",
+    "Linux·[6]在Ubuntu上部署XDMA环境.md",
+    "Linux字符设备驱动开发.md",
+    "STM32开发·[1.1]Linux下部署开发环境.md",
+    "未命名 1.canvas",
+    "未命名 2.canvas",
+    "未命名.canvas",
+    "笔记本风扇调速失效解决办法.md",
+    "Kanban/第一个一年计划.md",
     "Linux·[0]从零开始安装Manjaro.md",
-    "STM32开发·[1.3]DSP功能.md"
+    "Linux·[1]Linux入坑指南.md",
+    "ESP32开发·[1.1]Linux下部署ESP-IDF开发环境.md",
+    "C语言开发·[3]Qt开发.md",
+    "C语言开发·[3.1]QSS学习笔记.md",
+    "WordPress·[1]在华为云上部署WordPress I.md",
+    "ESP32开发·[1.2]安装VSCode插件.md",
+    "Linux·[3]Linux下配置clash.md"
   ]
 }

@@ -6,11 +6,11 @@
 
 ## 下载QT在线安装包
 
-在QT官网下载.run格式的安装包
+在[清华QT镜像站](https://mirrors.tuna.tsinghua.edu.cn/qt/official_releases/online_installers/)下载.run格式的安装包
 
 ## 对安装包提权
 
-右键安装包，点击属性，在权限中勾选允许执行文件
+终端输入`sudo chmod 777 ./qt-unified-linux-x64-4.4.1-online.run`对安装包进行提权。
 
 ## 使用镜像服务器安装
 

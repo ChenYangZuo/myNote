@@ -1,8 +1,8 @@
 {
   "theme": "moonstone",
   "translucency": false,
-  "cssTheme": "Minimal",
+  "cssTheme": "",
   "interfaceFontFamily": "HarmonyOS Sans SC",
   "textFontFamily": "HarmonyOS Sans SC",
-  "accentColor": ""
+  "accentColor": "#9c82f0"
 }

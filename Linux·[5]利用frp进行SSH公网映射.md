@@ -118,4 +118,4 @@ systemctl enable frpc
 
 **关联文档：**
 上一篇：[[Linux·[4]在Ubuntu上部署QT6开发环境]]
-下一篇：无
+下一篇：[[Linux·[6]在Ubuntu上部署XDMA环境]]

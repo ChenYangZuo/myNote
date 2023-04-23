@@ -2,7 +2,7 @@
   "theme": "moonstone",
   "translucency": false,
   "cssTheme": "",
-  "interfaceFontFamily": "HarmonyOS Sans SC",
-  "textFontFamily": "HarmonyOS Sans SC",
+  "interfaceFontFamily": "",
+  "textFontFamily": "",
   "accentColor": "#9c82f0"
 }

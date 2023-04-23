@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "832e7df23eb13b27",
+        "id": "c13987b844a2bcae",
         "type": "tabs",
         "children": [
           {
-            "id": "25b6de7e68526611",
+            "id": "02f52e4b731e8594",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux·[6]在Ubuntu上部署XDMA环境.md",
+                "file": "AD9361·[5]关于libiio.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linux·[6]在Ubuntu上部署XDMA环境.md",
+                "file": "AD9361·[5]关于libiio.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Linux·[6]在Ubuntu上部署XDMA环境.md",
+                "file": "AD9361·[5]关于libiio.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,34 +125,39 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Linux·[6]在Ubuntu上部署XDMA环境.md"
+                "file": "AD9361·[5]关于libiio.md"
               }
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
-      "canvas:新建白板": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
       "command-palette:打开命令面板": false
     }
   },
-  "active": "25b6de7e68526611",
+  "active": "02f52e4b731e8594",
   "lastOpenFiles": [
+    "AD9361·[5]关于libiio.md",
+    "Linux·[6]在Ubuntu上部署XDMA环境.md",
+    "STM32开发·[1.1]Linux下部署开发环境.md",
+    "AD9361·[1]在Ubuntu上安装PetaLinux.md",
+    "AD9361·[4]在Linux中安装IIO-Oscilloscope.md",
+    "FPGA开发笔记.md",
+    "AD9361·[3]Linux字符设备驱动开发.md",
+    "AD9361·[2]创建PetaLinux工程.md",
     "Linux·[4]在Ubuntu上部署QT6开发环境.md",
     "Linux·[5]利用frp进行SSH公网映射.md",
-    "Linux·[6]在Ubuntu上部署XDMA环境.md",
-    "Linux字符设备驱动开发.md",
-    "STM32开发·[1.1]Linux下部署开发环境.md",
     "未命名 1.canvas",
     "未命名 2.canvas",
     "未命名.canvas",

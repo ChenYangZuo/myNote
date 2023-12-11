@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AD9361·[5]关于libiio.md",
+                "file": "Linux·[6]在Ubuntu上部署XDMA环境.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 235
+    "width": 357.5
   },
   "right": {
     "id": "1d77612819e46e17",
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "AD9361·[5]关于libiio.md",
+                "file": "Linux·[6]在Ubuntu上部署XDMA环境.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "AD9361·[5]关于libiio.md",
+                "file": "Linux·[6]在Ubuntu上部署XDMA环境.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AD9361·[5]关于libiio.md"
+                "file": "Linux·[6]在Ubuntu上部署XDMA环境.md"
               }
             }
           }
@@ -148,8 +148,9 @@
   },
   "active": "02f52e4b731e8594",
   "lastOpenFiles": [
-    "AD9361·[5]关于libiio.md",
+    "Linux·[7]在Ubuntu上使用罗技鼠标驱动.md",
     "Linux·[6]在Ubuntu上部署XDMA环境.md",
+    "AD9361·[5]关于libiio.md",
     "STM32开发·[1.1]Linux下部署开发环境.md",
     "AD9361·[1]在Ubuntu上安装PetaLinux.md",
     "AD9361·[4]在Linux中安装IIO-Oscilloscope.md",

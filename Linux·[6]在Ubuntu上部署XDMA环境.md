@@ -35,4 +35,4 @@ sudo chmod 777 /dev/xdma0_c2h_0
 
 **关联文档：**
 上一篇：[[Linux·[5]利用frp进行SSH公网映射]]
-下一篇：无
+下一篇：[[Linux·[7]在Ubuntu上使用罗技鼠标驱动]]

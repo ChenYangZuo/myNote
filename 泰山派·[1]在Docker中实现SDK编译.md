@@ -1,6 +1,6 @@
 # 在Docker中实现泰山派SDK编译
 
-## 1. 安装Docker环境
+## 1 安装Docker环境
 
 > 本段选自[Docker官网](https://docs.docker.com/engine/install/ubuntu/)
 
@@ -40,7 +40,9 @@ sudo apt-get update
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 ```
 
-## 2. 创建编译环境
+
+
+## 2 创建编译环境
 
 ### 2.1 创建镜像
 
@@ -125,7 +127,9 @@ sudo docker run --privileged --mount type=bind,source=/media/star/Data1/zuocheny
 
 再次使用时，使用`sudo docker start lckfb_ubuntu_sdk `启动容器，并使用`sudo docker attach lckfb_ubuntu_sdk`附加到正在运行的名为lckfb_ubuntu_sdk的容器的终端上，以便与容器进行交互
 
-## 3.编译SDK
+
+
+## 3 编译SDK
 
 ### 3.1 板级配置
 

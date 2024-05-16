@@ -77,3 +77,11 @@ add_executable(app ${SOURCES})
 
 上述代码将搜索到的源文件全部编译，最终生成名为app的可执行文件。
 
+### 导入动态库
+
+```cmake
+target_link_libraries(fftw_test PRIVATE fftw3)
+```
+
+上述代码将`libfftw3.so`导入项目中，第二个参数为PRIVATE|PUBLIC|INTERFACE：动态库的访问权限，默认为PUBLIC，如果各个动态库之间没有依赖关系，无需做任何设置，三者没有没有区别，一般无需指定，使用默认的PUBLIC即可。
+
